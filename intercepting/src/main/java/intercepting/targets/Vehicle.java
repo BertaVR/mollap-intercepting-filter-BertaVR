@@ -1,4 +1,11 @@
 package intercepting.targets;
 
-public class Vehicle {
+public class Vehicle implements Target{
+
+    @Override
+    public void execution(String id){
+        System.out.println("Door open" + id); //No he puesto to String porque es redundante
+    }
+
+
 }
