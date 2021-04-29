@@ -23,20 +23,19 @@ public class Tasks {
     }
 
     public void setTarget(Target target) {
-        this.target = target;
+        this.target = Optional.ofNullable(target);
     }
 
     public void addTask(Filter filter) {
         getTasks().add(filter);
     }
 
-    public void execution(String name) {
-        getTasks().forEach(item -> item.execution(name));
-        if (getTarget().isPresent()) {
-            getTarget().get().execution(name);
-        } else {
-            System.out.print("Not available");
-        }
-    }
 
-}
+    public void execution(String message) {
+        List<Filter> tasks = getTasks();
+        for (Filter task : tasks) {
+            if (getTarget().isPresent()) {
+                task.execution(message);
+            }
+
+}}}
