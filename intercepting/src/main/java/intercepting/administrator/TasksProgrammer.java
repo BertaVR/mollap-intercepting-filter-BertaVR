@@ -3,10 +3,8 @@ package intercepting.administrator;
 import intercepting.filters.Filter;
 import intercepting.targets.Target;
 
-import java.util.Optional;
-
 public class TasksProgrammer {
-    private Tasks tasks;
+    private Tasks tasks= null;
 
     public TasksProgrammer(Target target) {
         tasks = new Tasks();

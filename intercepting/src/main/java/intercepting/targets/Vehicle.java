@@ -6,8 +6,8 @@ public class Vehicle implements Target {
     }
 
     @Override
-    public void execution(String id) {
-        System.out.println("Door open" + id); //No he puesto to String porque es redundante
+    public void execution(String message) {
+        System.out.println("Door open" + message); //No he puesto to String porque es redundante
     }
 
 

@@ -18,8 +18,8 @@ public class Mollapp implements Client {
 
 
     @Override
-    public void sendRequest(String id) {
-        programmer.execute(id);
+    public void sendRequest(String request) {
+        programmer.execute(request);
     }
 
     ;

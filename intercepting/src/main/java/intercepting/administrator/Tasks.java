@@ -38,4 +38,6 @@ public class Tasks {
                 task.execution(message);
             }
 
-}}}
+        }
+    }
+}
