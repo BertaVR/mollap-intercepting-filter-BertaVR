@@ -6,8 +6,6 @@ import intercepting.filters.Authentication;
 import intercepting.filters.Authorization;
 import intercepting.targets.Vehicle;
 
-import java.util.Optional;
-
 public final class App {
     public static void main(String[] args) {
 

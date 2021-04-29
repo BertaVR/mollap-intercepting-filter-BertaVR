@@ -4,7 +4,7 @@ import intercepting.filters.Filter;
 import intercepting.targets.Target;
 
 public class TasksProgrammer {
-    private Tasks tasks= null;
+    private Tasks tasks = null;
 
     public TasksProgrammer(Target target) {
         tasks = new Tasks();
