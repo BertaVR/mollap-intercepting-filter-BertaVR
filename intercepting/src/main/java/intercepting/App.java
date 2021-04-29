@@ -23,8 +23,8 @@ public final class App {
          * Afegir al sistema les tasques que volem que el sistema
          * executi al rebre la petició del client.
          */
-        TasksProgrammer.setTasks(new Authentication());
-        TasksProgrammer.setTasks(new Authorization());
+        tasksProgrammer.setTasks(new Authentication());
+        tasksProgrammer.setTasks(new Authorization());
 
         /**
          * Configuració de l'app client per a que
