@@ -1,11 +1,14 @@
 package intercepting;
 
 import intercepting.administrator.Tasks;
+import intercepting.filters.Filter;
 import intercepting.administrator.TasksProgrammer;
 import intercepting.clients.Mollapp;
 import intercepting.filters.Authorization;
 import intercepting.targets.Vehicle;
 import intercepting.filters.Authentication;
+
+import java.util.Optional;
 
 public final class App {
     public static void main(String[] args) {
@@ -16,14 +19,14 @@ public final class App {
          * des de vehicles a qualsevol cosa que admiteix
          * la recepció d'un missatge.
          */
-        TasksProgrammer tasksProgrammer = new TasksProgrammer(new Vehicle());
+        TasksProgrammer tasksProgrammer = new TasksProgrammer(Optional.of(new Vehicle()));
 
         /**
          * Afegir al sistema les tasques que volem que el sistema
          * executi al rebre la petició del client.
          */
-        TasksProgrammer.setTask(new Authentication());
-        TasksProgrammer.setTask(new Authorization());
+        TasksProgrammer.setTasks(new Authentication());
+        TasksProgrammer.setTasks(new Authorization());
 
         /**
          * Configuració de l'app client per a que

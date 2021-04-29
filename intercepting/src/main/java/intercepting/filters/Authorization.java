@@ -2,9 +2,7 @@ package intercepting.filters;
 
 public class Authorization implements Filter{
 
-    public Authorization() {
-    }
-
+    public Authorization(){};
 
     @Override
     public void execution(String name){

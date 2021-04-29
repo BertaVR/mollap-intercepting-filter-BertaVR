@@ -3,7 +3,7 @@ package intercepting.administrator;
 import intercepting.filters.Filter;
 import intercepting.targets.Target;
 
-import java.nio.file.DirectoryStream;
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Optional;
@@ -21,7 +21,7 @@ public class Tasks {
     }
 
     public Optional<Target> getTarget() {
-        return target;
+        return this.target;
     }
 
     public void setTarget(Optional<Target> target) {

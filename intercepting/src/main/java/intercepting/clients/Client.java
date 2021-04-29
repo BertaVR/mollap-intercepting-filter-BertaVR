@@ -1,7 +1,11 @@
 package intercepting.clients;
 
-public interface Client {
-    public void setTasksProgrammer(String programmer);
+import intercepting.administrator.Tasks;
+import intercepting.administrator.TasksProgrammer;
 
-    public void sendRequest(String request);
+public interface Client {
+
+    void setTasksProgrammer(TasksProgrammer programmer);
+
+    void sendRequest(String request);
 }
