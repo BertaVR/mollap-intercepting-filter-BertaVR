@@ -1,6 +1,5 @@
 package intercepting.clients;
 
-import intercepting.administrator.Tasks;
 import intercepting.administrator.TasksProgrammer;
 
 public interface Client {

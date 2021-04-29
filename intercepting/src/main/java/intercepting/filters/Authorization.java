@@ -1,13 +1,18 @@
 package intercepting.filters;
 
-public class Authorization implements Filter{
+public class Authorization implements Filter {
 
-    public Authorization(){};
+    public Authorization() {
+    }
+
+    ;
 
     @Override
-    public void execution(String name){
+    public void execution(String name) {
         System.out.println("Authorization OK for" + name);
-    };
+    }
+
+    ;
 
 
 }

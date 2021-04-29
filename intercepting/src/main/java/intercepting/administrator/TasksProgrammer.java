@@ -14,14 +14,14 @@ public class TasksProgrammer {
     }
 
     public Tasks getTasks() {
-        return tasks;
+        return this.tasks;
     }
 
     public void setTasks(Filter task) {
         getTasks().addTask(task);
     }
 
-    public void execute(String message){
+    public void execute(String message) {
         tasks.execution(message);
     }
 }

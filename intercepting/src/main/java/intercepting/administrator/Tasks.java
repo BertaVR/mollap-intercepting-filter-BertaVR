@@ -3,20 +3,18 @@ package intercepting.administrator;
 import intercepting.filters.Filter;
 import intercepting.targets.Target;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Optional;
 
 public class Tasks {
+    private List<Filter> tasks = new LinkedList<>();
+    private Optional<Target> target;
+
     public Tasks() {
     }
 
-    private List <Filter> tasks = new LinkedList<>();
-
-    private Optional<Target> target ;
-
-    public List<Filter> getTasks(){
+    public List<Filter> getTasks() {
         return this.tasks;
     }
 
@@ -28,16 +26,15 @@ public class Tasks {
         this.target = target;
     }
 
-    public void addTask(Filter filter){
+    public void addTask(Filter filter) {
         getTasks().add(filter);
     }
 
-    public void execution(String name){
+    public void execution(String name) {
         getTasks().forEach(item -> item.execution(name));
-        if (getTarget().isPresent()){
+        if (getTarget().isPresent()) {
             getTarget().get().execution(name);
-        }
-        else{
+        } else {
             System.out.print("Not available");
         }
     }
