@@ -26,7 +26,7 @@ public final class App {
         /**
          * Configuring the Client app
          * for it to run the schedulled tasks
-         * ans send a message to the system.
+         * and send a message to the system.
          */
         Mollapp mollapp = new Mollapp();
         mollapp.setTasksProgrammer(tasksProgrammer);
