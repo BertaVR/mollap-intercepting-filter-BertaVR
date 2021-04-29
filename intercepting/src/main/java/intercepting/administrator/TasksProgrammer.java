@@ -8,7 +8,7 @@ import java.util.Optional;
 public class TasksProgrammer {
     private Tasks tasks;
 
-    public TasksProgrammer(Optional<Target> target) {
+    public TasksProgrammer(Target target) {
         tasks = new Tasks();
         tasks.setTarget(target);
     }

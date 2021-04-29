@@ -17,7 +17,7 @@ public final class App {
          * des de vehicles a qualsevol cosa que admiteix
          * la recepció d'un missatge.
          */
-        TasksProgrammer tasksProgrammer = new TasksProgrammer(Optional.of(new Vehicle()));
+        TasksProgrammer tasksProgrammer = new TasksProgrammer((new Vehicle()));
 
         /**
          * Afegir al sistema les tasques que volem que el sistema
