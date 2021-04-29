@@ -12,7 +12,7 @@ public final class App {
         /**
          * Configuring the tasks programmer
          * with the chosen target type (vehicle in this case,
-         *  but it could be any target capable of recieving a message.)
+         *  but it could be any target capable of recieving a message).
          */
         TasksProgrammer tasksProgrammer = new TasksProgrammer((new Vehicle()));
 
