@@ -10,24 +10,23 @@ public final class App {
     public static void main(String[] args) {
 
         /**
-         * Configuració del programador de tasques
-         * del sistema amb el tipus de target triat:
-         * des de vehicles a qualsevol cosa que admiteix
-         * la recepció d'un missatge.
+         * Configuring the tasks programmer
+         * with the chosen target type (vehicle in this case,
+         *  but it could be any target capable of recieving a message.)
          */
         TasksProgrammer tasksProgrammer = new TasksProgrammer((new Vehicle()));
 
         /**
-         * Afegir al sistema les tasques que volem que el sistema
-         * executi al rebre la petició del client.
+         * Adding to the system the tasks that we want it to
+         *  execute once the client request is recievec.
          */
         tasksProgrammer.setTasks(new Authentication());
         tasksProgrammer.setTasks(new Authorization());
 
         /**
-         * Configuració de l'app client per a que
-         * executi les tasques programades i
-         * enviï el misstage al sistema.
+         * Configuring the Client app
+         * for it to run the schedulled tasks
+         * ans send a message to the system.
          */
         Mollapp mollapp = new Mollapp();
         mollapp.setTasksProgrammer(tasksProgrammer);
